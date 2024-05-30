@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF SYSTEM "patentSemantic.dtd">
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:pat="http://example.org/patents#">
+
+    <!-- Clase Patent -->
+    <rdf:Description rdf:about="http://example.org/patents#Patent12345">
+        <rdf:type rdf:resource="http://example.org/patents#Patent"/>
+        <dc:title>Método y aparato para mejorar la eficiencia de los motores</dc:title>
+        <dc:abstract>Un método y aparato para mejorar la eficiencia de los motores mediante...</dc:abstract>
+        <pat:hasDescription>La presente invención se refiere a un método para mejorar la eficiencia...</pat:hasDescription>
+        <pat:hasClaim>Reivindicación 1: Un método para mejorar la eficiencia de los motores...</pat:hasClaim>
+        <pat:hasInventor rdf:resource="http://example.org/patents#InventorJohnDoe"/>
+        <pat:hasInventor rdf:resource="http://example.org/patents#InventorJaneSmith"/>
+        <pat:hasPatentNumber>US1234567B1</pat:hasPatentNumber>
+        <pat:hasFilingDate>2020-05-18</pat:hasFilingDate>
+        <pat:hasGrantDate>2022-01-25</pat:hasGrantDate>
+        <pat:hasClassification rdf:resource="http://example.org/patents#ClassificationIPC1"/>
+        <pat:hasClassification rdf:resource="http://example.org/patents#ClassificationCPC1"/>
+        <pat:hasApplicant rdf:resource="http://example.org/patents#CompanyXYZ"/>
+        <pat:isAssignedTo rdf:resource="http://example.org/patents#CompanyABC"/>
+        <pat:isAssignedTo rdf:resource="http://example.org/patents#CompanyDEF"/>
+        <pat:hasApplication rdf:resource="http://example.org/patents#Application123"/>
+        <pat:hasExternalLink rdf:resource="http://example.org/patents#ExternalLink1"/>
+        <pat:hasTopic>Eficiencia de Motores</pat:hasTopic>
+        <pat:cites rdf:resource="http://example.org/patents#Document5678"/>
+        <pat:hasKeyword rdf:resource="http://example.org/patents#KeywordEfficiency"/>
+        <pat:hasKeyword rdf:resource="http://example.org/patents#KeywordMotor"/>
+        <pat:hasApplicationNumber>US2020/0005678</pat:hasApplicationNumber>
+        <pat:hasPublicationNumber>US2022/0012345</pat:hasPublicationNumber>
+        <pat:hasPriorityNumber>US2019/0004321</pat:hasPriorityNumber>
+    </rdf:Description>
+
+    <!-- Clase Inventor -->
+    <rdf:Description rdf:about="http://example.org/patents#InventorJohnDoe">
+        <rdf:type rdf:resource="http://example.org/patents#Inventor"/>
+        <dc:name>John Doe</dc:name>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/patents#InventorJaneSmith">
+        <rdf:type rdf:resource="http://example.org/patents#Inventor"/>
+        <dc:name>Jane Smith</dc:name>
+    </rdf:Description>
+
+    <!-- Clase Company -->
+    <rdf:Description rdf:about="http://example.org/patents#CompanyXYZ">
+        <rdf:type rdf:resource="http://example.org/patents#Company"/>
+        <dc:name>XYZ Corporation</dc:name>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/patents#CompanyABC">
+        <rdf:type rdf:resource="http://example.org/patents#Company"/>
+        <dc:name>ABC Industries</dc:name>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/patents#CompanyDEF">
+        <rdf:type rdf:resource="http://example.org/patents#Company"/>
+        <dc:name>DEF Enterprises</dc:name>
+    </rdf:Description>
+
+    <!-- Clase Application -->
+    <rdf:Description rdf:about="http://example.org/patents#Application123">
+        <rdf:type rdf:resource="http://example.org/patents#Application"/>
+        <dc:description>Aplicación en sistemas de vehículos eléctricos...</dc:description>
+    </rdf:Description>
+
+    <!-- Clase ExternalLink -->
+    <rdf:Description rdf:about="http://example.org/patents#ExternalLink1">
+        <rdf:type rdf:resource="http://example.org/patents#ExternalLink"/>
+        <dc:identifier rdf:resource="http://www.example.org/resource1"/>
+    </rdf:Description>
+
+    <!-- Clase Classification -->
+    <rdf:Description rdf:about="http://example.org/patents#ClassificationIPC1">
+        <rdf:type rdf:resource="http://example.org/patents#Classification"/>
+        <dc:title>F01N 3/00 - Control de la contaminación del aire por motores de combustión interna</dc:title>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/patents#ClassificationCPC1">
+        <rdf:type rdf:resource="http://example.org/patents#Classification"/>
+        <dc:title>Y02T 10/00 - Tecnologías para la mitigación del cambio climático en el transporte</dc:title>
+    </rdf:Description>
+
+    <!-- Clase Document -->
+    <rdf:Description rdf:about="http://example.org/patents#Document5678">
+        <rdf:type rdf:resource="http://example.org/patents#Document"/>
+        <dc:title>Documento de patente anterior relacionado</dc:title>
+    </rdf:Description>
+
+    <!-- Clase Keyword -->
+    <rdf:Description rdf:about="http://example.org/patents#KeywordEfficiency">
+        <rdf:type rdf:resource="http://example.org/patents#Keyword"/>
+        <dc:title>Eficiencia</dc:title>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/patents#KeywordMotor">
+        <rdf:type rdf:resource="http://example.org/patents#Keyword"/>
+        <dc:title>Motor</dc:title>
+    </rdf:Description>
+
+</rdf:RDF>

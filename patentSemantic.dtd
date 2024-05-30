@@ -1,0 +1,67 @@
+<!ELEMENT rdf:RDF (rdf:Description+)>
+<!ATTLIST rdf:RDF
+    xmlns:rdf CDATA #FIXED "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc CDATA #FIXED "http://purl.org/dc/elements/1.1/"
+    xmlns:pat CDATA #FIXED "http://example.org/patents#"
+>
+
+<!ELEMENT rdf:Description (rdf:type?, dc:title?, dc:abstract?, pat:hasDescription?, pat:hasClaim?, pat:hasInventor*, pat:hasPatentNumber?, pat:hasFilingDate?, pat:hasGrantDate?, pat:hasClassification*, pat:hasApplicant?, pat:isAssignedTo*, pat:hasApplication?, pat:hasExternalLink?, pat:hasTopic?, pat:cites?, pat:hasKeyword*, pat:hasApplicationNumber?, pat:hasPublicationNumber?, pat:hasPriorityNumber?, dc:name?, dc:description?, dc:identifier?)>
+<!ATTLIST rdf:Description
+    rdf:about CDATA #REQUIRED
+>
+
+<!ELEMENT rdf:type EMPTY>
+<!ATTLIST rdf:type
+    rdf:resource CDATA #REQUIRED
+>
+
+<!ELEMENT dc:title (#PCDATA)>
+<!ELEMENT dc:abstract (#PCDATA)>
+<!ELEMENT pat:hasDescription (#PCDATA)>
+<!ELEMENT pat:hasClaim (#PCDATA)>
+<!ELEMENT pat:hasInventor EMPTY>
+<!ATTLIST pat:hasInventor
+    rdf:resource CDATA #REQUIRED
+>
+<!ELEMENT pat:hasPatentNumber (#PCDATA)>
+<!ELEMENT pat:hasFilingDate (#PCDATA)>
+<!ELEMENT pat:hasGrantDate (#PCDATA)>
+<!ELEMENT pat:hasClassification EMPTY>
+<!ATTLIST pat:hasClassification
+    rdf:resource CDATA #REQUIRED
+>
+<!ELEMENT pat:hasApplicant EMPTY>
+<!ATTLIST pat:hasApplicant
+    rdf:resource CDATA #REQUIRED
+>
+<!ELEMENT pat:isAssignedTo EMPTY>
+<!ATTLIST pat:isAssignedTo
+    rdf:resource CDATA #REQUIRED
+>
+<!ELEMENT pat:hasApplication EMPTY>
+<!ATTLIST pat:hasApplication
+    rdf:resource CDATA #REQUIRED
+>
+<!ELEMENT pat:hasExternalLink EMPTY>
+<!ATTLIST pat:hasExternalLink
+    rdf:resource CDATA #REQUIRED
+>
+<!ELEMENT pat:hasTopic (#PCDATA)>
+<!ELEMENT pat:cites EMPTY>
+<!ATTLIST pat:cites
+    rdf:resource CDATA #REQUIRED
+>
+<!ELEMENT pat:hasKeyword EMPTY>
+<!ATTLIST pat:hasKeyword
+    rdf:resource CDATA #REQUIRED
+>
+<!ELEMENT pat:hasApplicationNumber (#PCDATA)>
+<!ELEMENT pat:hasPublicationNumber (#PCDATA)>
+<!ELEMENT pat:hasPriorityNumber (#PCDATA)>
+<!ELEMENT dc:name (#PCDATA)>
+<!ELEMENT dc:description (#PCDATA)>
+<!ELEMENT dc:identifier EMPTY>
+<!ATTLIST dc:identifier
+    rdf:resource CDATA #REQUIRED
+>
+
